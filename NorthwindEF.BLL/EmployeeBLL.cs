@@ -13,6 +13,17 @@ namespace NorthwindEF.BLL
         {
             NorthwindEntities dataContext = new NorthwindEntities();
             return dataContext.Employees.ToList();
+
+            
+        }
+
+        public static object GetEmployeesPicture()
+        {
+            NorthwindEntities dataContext = new NorthwindEntities();
+            return dataContext.Employees.Select(x => new { x.Photo }).ToList();
+
+
+
         }
 
     }

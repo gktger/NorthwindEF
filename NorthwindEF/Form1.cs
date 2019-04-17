@@ -34,9 +34,38 @@ namespace NorthwindEF
 
         private void shippersToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FormShippers frm = new FormShippers();
+            ShipperForm frm = new ShipperForm();
             frm.ShowDialog();
 
+        }
+
+        private void productsLİstToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductForm frm = new ProductForm();
+            frm.ShowDialog();
+        }
+
+        private void personelResimleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmployeePictureForm frm = new EmployeePictureForm();
+            frm.ShowDialog();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = CustomerBLL.SearchCustomers(textBox1.Text);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void orderListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OrdersForm frm = new OrdersForm();
+            frm.CustomerID = this.dataGridView1.SelectedRows[0].Cells["CustomerID"].Value.ToString();
+            frm.ShowDialog();
         }
     }
 }

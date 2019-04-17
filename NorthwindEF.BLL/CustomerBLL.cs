@@ -16,5 +16,14 @@ namespace NorthwindEF.BLL
 
 
         }
+
+        public static List<Customer> SearchCustomers(string text)
+        {
+            NorthwindEntities dataContext = new NorthwindEntities();
+
+
+            return dataContext.Customers.Where(x => x.ContactName.Contains(text)).ToList();
+                            
+        }
     }
 }

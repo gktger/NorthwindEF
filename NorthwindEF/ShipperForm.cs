@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace NorthwindEF
 {
-    public partial class FormShippers : Form
+    public partial class ShipperForm : Form
     {
-        public FormShippers()
+        public ShipperForm()
         {
             InitializeComponent();
         }
