@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NorthwindEF.BLL;
+using NorthwindEF.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,19 @@ namespace NorthwindEF
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = CustomerBLL.GetCustomers();
+            
+        }
+
+        private void personelListesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmployeeForm frm = new EmployeeForm();
+            frm.ShowDialog();
+
         }
     }
 }
