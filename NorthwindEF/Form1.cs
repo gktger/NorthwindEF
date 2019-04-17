@@ -31,5 +31,12 @@ namespace NorthwindEF
             frm.ShowDialog();
 
         }
+
+        private void shippersToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormShippers frm = new FormShippers();
+            frm.ShowDialog();
+
+        }
     }
 }

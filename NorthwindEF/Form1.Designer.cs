@@ -32,6 +32,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.personelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shippersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shippersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +49,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.personelToolStripMenuItem});
+            this.personelToolStripMenuItem,
+            this.shippersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -68,6 +71,21 @@
             this.personelListesiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.personelListesiToolStripMenuItem.Text = "Personel Listesi";
             this.personelListesiToolStripMenuItem.Click += new System.EventHandler(this.personelListesiToolStripMenuItem_Click);
+            // 
+            // shippersToolStripMenuItem
+            // 
+            this.shippersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.shippersToolStripMenuItem1});
+            this.shippersToolStripMenuItem.Name = "shippersToolStripMenuItem";
+            this.shippersToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.shippersToolStripMenuItem.Text = "Shippers";
+            // 
+            // shippersToolStripMenuItem1
+            // 
+            this.shippersToolStripMenuItem1.Name = "shippersToolStripMenuItem1";
+            this.shippersToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.shippersToolStripMenuItem1.Text = "Shippers List";
+            this.shippersToolStripMenuItem1.Click += new System.EventHandler(this.shippersToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -94,6 +112,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem personelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelListesiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shippersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shippersToolStripMenuItem1;
     }
 }
 
