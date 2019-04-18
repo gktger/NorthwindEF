@@ -15,7 +15,7 @@ namespace NorthwindEF.BLL
             return dataContex.Orders.Where(x => x.CustomerID == CustomerID).ToList();
         }
 
-        public static void AddOrders(string CustomerID,int ShipperID)
+        public static int AddOrders(string CustomerID,int ShipperID)
         {
             NorthwindEntities dataContex = new NorthwindEntities();
 
@@ -26,8 +26,8 @@ namespace NorthwindEF.BLL
 
             dataContex.Orders.Add(order);
             dataContex.SaveChanges();
+            return order.OrderID;
         }
        
-       public static Order GetOrder()
     }
 }

@@ -34,8 +34,9 @@ namespace NorthwindEF
         private void btn_ekle_Click(object sender, EventArgs e)
         {
 
-            OrderBLL.AddOrders(CustomerID, Convert.ToInt32(comboBox1.SelectedValue)); 
-
+            int orderID = OrderBLL.AddOrders(CustomerID, Convert.ToInt32(comboBox1.SelectedValue));
+            Product product = ProductBLL.GetProduct((int)dataGridView1.SelectedRows[0].Cells["ProductID"].Value);
+            OrderDetailBLL.AddOrderDetails(orderID, product);
         }
     }
 }

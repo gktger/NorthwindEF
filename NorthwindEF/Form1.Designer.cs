@@ -41,6 +41,7 @@
             this.shippersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsLİstToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -132,7 +133,8 @@
             // productsToolStripMenuItem
             // 
             this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.productsLİstToolStripMenuItem});
+            this.productsLİstToolStripMenuItem,
+            this.addProductToolStripMenuItem});
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
             this.productsToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.productsToolStripMenuItem.Text = "Products";
@@ -140,9 +142,16 @@
             // productsLİstToolStripMenuItem
             // 
             this.productsLİstToolStripMenuItem.Name = "productsLİstToolStripMenuItem";
-            this.productsLİstToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.productsLİstToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productsLİstToolStripMenuItem.Text = "Products Lİst";
             this.productsLİstToolStripMenuItem.Click += new System.EventHandler(this.productsLİstToolStripMenuItem_Click);
+            // 
+            // addProductToolStripMenuItem
+            // 
+            this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
+            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addProductToolStripMenuItem.Text = "Add Product";
+            this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -188,6 +197,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem orderListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newOrderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addProductToolStripMenuItem;
     }
 }
 

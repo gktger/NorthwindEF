@@ -16,13 +16,19 @@ namespace NorthwindEF.BLL
             return dataContext.Order_Details.Where(x => x.OrderID == OrderID).ToList();
         }
 
-        public static void AddOrderDetails(int OrderID)
+        public static void AddOrderDetails(int OrderID,Product product)
         {
             NorthwindEntities dataContex = new NorthwindEntities();
 
             Order_Detail order_Detail = new Order_Detail();
-            order_Detail.OrderID=
+            order_Detail.OrderID = OrderID;
+            order_Detail.ProductID = product.ProductID;
+            order_Detail.Discount = 0;
+            order_Detail.Quantity = 10;
+            order_Detail.UnitPrice = Convert.ToDecimal(product.UnitPrice);
 
+            dataContex.Order_Details.Add(order_Detail);
+            dataContex.SaveChanges();
         }
     }
 }

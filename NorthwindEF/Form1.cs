@@ -75,5 +75,11 @@ namespace NorthwindEF
             frm.CustomerID = this.dataGridView1.SelectedRows[0].Cells["CustomerID"].Value.ToString();
             frm.ShowDialog();
         }
+
+        private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddProductForm frm = new AddProductForm();
+            frm.ShowDialog();
+        }
     }
 }
