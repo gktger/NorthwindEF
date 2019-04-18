@@ -65,12 +65,14 @@ namespace NorthwindEF
         {
             OrdersForm frm = new OrdersForm();
             frm.CustomerID = this.dataGridView1.SelectedRows[0].Cells["CustomerID"].Value.ToString();
+            
             frm.ShowDialog();
         }
 
         private void newOrderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProductForm frm = new ProductForm();
+            AddOrderForm frm = new AddOrderForm();
+            frm.CustomerID = this.dataGridView1.SelectedRows[0].Cells["CustomerID"].Value.ToString();
             frm.ShowDialog();
         }
     }

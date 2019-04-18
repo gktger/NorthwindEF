@@ -15,7 +15,19 @@ namespace NorthwindEF.BLL
             return dataContex.Orders.Where(x => x.CustomerID == CustomerID).ToList();
         }
 
+        public static void AddOrders(string CustomerID,int ShipperID)
+        {
+            NorthwindEntities dataContex = new NorthwindEntities();
+
+            Order order = new Order();
+            order.ShipVia = ShipperID;
+            order.CustomerID = CustomerID;
+            order.EmployeeID = 1;
+
+            dataContex.Orders.Add(order);
+            dataContex.SaveChanges();
+        }
        
-        
+       public static Order GetOrder()
     }
 }

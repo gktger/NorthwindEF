@@ -15,5 +15,14 @@ namespace NorthwindEF.BLL
             NorthwindEntities dataContext = new NorthwindEntities();
             return dataContext.Order_Details.Where(x => x.OrderID == OrderID).ToList();
         }
+
+        public static void AddOrderDetails(int OrderID)
+        {
+            NorthwindEntities dataContex = new NorthwindEntities();
+
+            Order_Detail order_Detail = new Order_Detail();
+            order_Detail.OrderID=
+
+        }
     }
 }
