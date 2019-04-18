@@ -14,5 +14,8 @@ namespace NorthwindEF.BLL
             NorthwindEntities dataContex = new NorthwindEntities();
             return dataContex.Orders.Where(x => x.CustomerID == CustomerID).ToList();
         }
+
+       
+        
     }
 }

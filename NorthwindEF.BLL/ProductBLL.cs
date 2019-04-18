@@ -16,10 +16,7 @@ namespace NorthwindEF.BLL
            
         }
 
-        public static void AddProducts
-        {
-            North
-        }
+       
         
     }
 }
