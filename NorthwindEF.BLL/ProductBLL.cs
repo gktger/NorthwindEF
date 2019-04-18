@@ -15,5 +15,11 @@ namespace NorthwindEF.BLL
             return dataContext.Products.ToList();
            
         }
+
+        public static void AddProducts
+        {
+            North
+        }
+        
     }
 }

@@ -32,6 +32,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.orderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -48,9 +49,10 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.orderDetailsToolStripMenuItem});
+            this.orderDetailsToolStripMenuItem,
+            this.addOrderToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
             // orderDetailsToolStripMenuItem
             // 
@@ -58,6 +60,13 @@
             this.orderDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.orderDetailsToolStripMenuItem.Text = "Order Details";
             this.orderDetailsToolStripMenuItem.Click += new System.EventHandler(this.orderDetailsToolStripMenuItem_Click);
+            // 
+            // addOrderToolStripMenuItem
+            // 
+            this.addOrderToolStripMenuItem.Name = "addOrderToolStripMenuItem";
+            this.addOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addOrderToolStripMenuItem.Text = "Add Order";
+            this.addOrderToolStripMenuItem.Click += new System.EventHandler(this.addOrderToolStripMenuItem_Click);
             // 
             // OrdersForm
             // 
@@ -79,5 +88,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem orderDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addOrderToolStripMenuItem;
     }
 }

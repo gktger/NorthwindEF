@@ -31,5 +31,10 @@ namespace NorthwindEF
             frm.OrderID = Convert.ToInt32(this.dataGridView1.SelectedRows[0].Cells["OrderID"].Value.ToString());
             frm.ShowDialog();
         }
+
+        private void addOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

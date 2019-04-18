@@ -22,5 +22,10 @@ namespace NorthwindEF
         {
             dataGridView1.DataSource = ProductBLL.GetProducts();
         }
+
+        private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

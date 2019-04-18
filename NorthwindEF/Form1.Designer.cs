@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.orderListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.personelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,11 +42,9 @@
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsLİstToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.orderListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -55,6 +56,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 373);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.orderListToolStripMenuItem,
+            this.newOrderToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(132, 48);
+            // 
+            // orderListToolStripMenuItem
+            // 
+            this.orderListToolStripMenuItem.Name = "orderListToolStripMenuItem";
+            this.orderListToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.orderListToolStripMenuItem.Text = "Order List";
+            this.orderListToolStripMenuItem.Click += new System.EventHandler(this.orderListToolStripMenuItem_Click);
+            // 
+            // newOrderToolStripMenuItem
+            // 
+            this.newOrderToolStripMenuItem.Name = "newOrderToolStripMenuItem";
+            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.newOrderToolStripMenuItem.Text = "New Order";
+            this.newOrderToolStripMenuItem.Click += new System.EventHandler(this.newOrderToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -129,20 +152,6 @@
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.orderListToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
-            // 
-            // orderListToolStripMenuItem
-            // 
-            this.orderListToolStripMenuItem.Name = "orderListToolStripMenuItem";
-            this.orderListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.orderListToolStripMenuItem.Text = "Order List";
-            this.orderListToolStripMenuItem.Click += new System.EventHandler(this.orderListToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,9 +165,9 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,6 +187,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem orderListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newOrderToolStripMenuItem;
     }
 }
 
